@@ -1,0 +1,10 @@
+address: ${VAULT_ADDR}
+token: ${VAULT_TOKEN}
+open-timeout: ${VAULT_OPEN_TIMEOUT}
+read-timeout: ${VAULT_READ_TIMEOUT}
+max-retries: 3
+retry-interval-millis: 1000
+
+# TODO support ssl
+ssl:
+  verify: false
