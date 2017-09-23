@@ -3,7 +3,7 @@ package com.ulfric.dragoon.vault.config;
 import com.bettercloud.vault.SslConfig;
 import com.bettercloud.vault.VaultConfig;
 
-import com.ulfric.dragoon.cfg4j.Settings;
+import com.ulfric.dragoon.conf4j.Settings;
 
 public class VaultConfigBridge extends VaultConfig {
 

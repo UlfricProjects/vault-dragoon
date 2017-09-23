@@ -16,7 +16,6 @@ public class SecretExtension extends Extension { // TODO support automatic refre
 	private FieldProfile createFieldProfile() {
 		return  FieldProfile.builder()
 				.setFactory(parent.request(SecretFactory.class))
-				.setSendFieldToFactory(true)
 				.setFlagToSearchFor(Secret.class)
 				.build();
 	}
