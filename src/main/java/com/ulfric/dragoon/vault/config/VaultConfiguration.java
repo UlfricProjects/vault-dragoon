@@ -1,6 +1,8 @@
 package com.ulfric.dragoon.vault.config;
 
-public interface VaultConfiguration {
+import com.ulfric.conf4j.ConfigurationBean;
+
+public interface VaultConfiguration extends ConfigurationBean {
 
 	String address();
 
