@@ -30,11 +30,7 @@ public class SecretFactory implements Factory {
 			path = qualifier.getName();
 		}
 
-		try {
-			return type.cast(secrets.read(path));
-		} catch (RuntimeException exception) {
-			return type.cast("FAILED TO READ SECRET: " + path);
-		}
+		return type.cast(secrets.read(path));
 	}
 
 }
