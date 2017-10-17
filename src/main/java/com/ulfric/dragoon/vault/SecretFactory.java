@@ -30,7 +30,12 @@ public class SecretFactory implements Factory {
 			path = qualifier.getName();
 		}
 
-		return type.cast(secrets.read(path));
+		String value = secrets.read(path);
+		if (value == null || value.isEmpty()) {
+			value = secret.fallbackSecret();
+		}
+
+		return type.cast(value);
 	}
 
 }

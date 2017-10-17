@@ -12,4 +12,6 @@ public @interface Secret {
 
 	String value() default "";
 
+	String fallbackSecret() default "";
+
 }
